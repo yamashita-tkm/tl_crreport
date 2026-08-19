@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>トレプロ広告クリエイティブ分析｜2026年8月1日〜18日</title>
+<style>
+:root{--red:#df1f2d;--ink:#191919;--muted:#6c6c73;--line:#e7e7ea;--soft:#f7f7f8;--green:#14804a}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:#fff}
+.hero{background:linear-gradient(125deg,#181818 0 68%,#b3101c 68%);color:#fff;padding:72px max(6vw,28px) 64px}.eyebrow{color:#ff7882;font-weight:800;letter-spacing:.16em;font-size:12px}h1{font-size:clamp(34px,5vw,66px);line-height:1.06;margin:16px 0 20px;max-width:880px}.meta-line{margin-top:28px;color:#bbb;font-size:13px}.toc-wrap{position:sticky;top:0;z-index:50;background:#191919;color:#fff;padding:13px max(6vw,28px);box-shadow:0 3px 12px rgba(0,0,0,.22);display:flex;align-items:center;gap:18px}.toc-label{font-size:16px;font-weight:900;white-space:nowrap;color:#ffe56d}.toc{display:flex;flex-wrap:wrap;gap:10px;margin:0}.toc a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.42);background:rgba(255,255,255,.09);padding:11px 16px;font-size:14px;font-weight:800;border-radius:3px}.toc a:hover{background:#fff;color:#191919}
+main{max-width:1180px;margin:auto;padding:52px 24px 96px}section{margin:0 0 72px;scroll-margin-top:145px}h2{font-size:30px;margin:0 0 24px;padding-left:14px;border-left:6px solid var(--red)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.kpi{border:1px solid var(--line);border-top:4px solid var(--red);padding:22px;background:#fff}.kpi b{display:block;font-size:30px;margin:8px 0}.kpi small{color:var(--muted)}
+.media-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.summary-card{border:1px solid var(--line);border-top:4px solid var(--red);padding:20px;background:#fff}.summary-card h3{display:flex;align-items:center;gap:8px;margin:0 0 15px;font-size:18px}.total-icon{width:24px;height:24px;border-radius:7px;background:#191919;color:#fff;display:inline-flex;align-items:center;justify-content:center}.summary-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.summary-metrics span{background:var(--soft);padding:10px}.summary-metrics small{display:block;color:var(--muted);font-size:11px}.summary-metrics b{display:block;font-size:18px;margin-top:4px}.daily-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.chart-panel{border:1px solid var(--line);padding:20px;background:#fff;overflow:hidden}.chart-panel h3{font-size:22px;margin:0 0 18px}.chart-title{font-size:13px;font-weight:800;margin:4px 0 6px}.chart-title.second{margin-top:24px}.legend{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:10px;margin-bottom:3px;flex-wrap:wrap}.legend i{width:18px;height:3px;background:var(--c);display:inline-block;margin-left:6px}.trend-svg{display:block;width:100%;height:auto;min-width:0}.gridline{stroke:#e9e9ec;stroke-width:1}.weekline{stroke:#8a8a92;stroke-width:1.5;stroke-dasharray:5 4}.axis-label,.date-label{fill:#777;font-size:10px}.week-label{fill:#666;font-size:9px;font-weight:700}.chart-guide{border:1px solid #ead36b;background:#fffbea;padding:24px;display:flex;flex-direction:column;justify-content:center}.chart-guide h3{margin:0 0 12px}.chart-guide p{line-height:1.75;color:#4b4634}mark,.marker{background:linear-gradient(transparent 52%,#ffe56d 52% 92%,transparent 92%);color:inherit;padding:0 .08em;font-weight:800}.state.on{background:#d8f5e6;color:#08723e;border:1px solid #79c99d}.state.off{background:#ffe1e1;color:#9d2020;border:1px solid #e8a0a0}.journey{display:grid;grid-template-columns:1fr 52px 1fr 52px 1fr;align-items:stretch;gap:8px}.journey-step{border:1px solid var(--line);padding:22px;background:#fff;position:relative}.journey-step small{font-weight:900;color:var(--red);letter-spacing:.08em}.journey-step h3{margin:8px 0;font-size:18px}.journey-step p{font-size:13px;line-height:1.7;color:#555}.journey-arrow{display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--red);font-weight:900}.role-tag{display:inline-block;padding:4px 8px;font-size:10px;font-weight:900;border-radius:12px;background:#fff2a8;color:#6d5600}.next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.next-card{padding:18px;background:#191919;color:#fff}.next-card b{display:block;color:#ffe56d;margin-bottom:6px}.next-card p{font-size:12px;line-height:1.65;color:#ddd;margin:0}
+.scope-audit{margin-top:18px;border:2px solid #202020;background:#fff}.scope-audit-head{padding:16px 20px;background:#202020;color:#fff;display:flex;justify-content:space-between;gap:12px;align-items:center}.scope-audit-head b{color:#ffe56d}.scope-grid{display:grid;grid-template-columns:repeat(3,1fr)}.scope-item{padding:18px 20px;border-right:1px solid var(--line)}.scope-item:last-child{border-right:0}.scope-item small{display:block;color:var(--muted);font-weight:800}.scope-item b{display:block;font-size:22px;margin:6px 0}.scope-item p{font-size:12px;line-height:1.65;color:#555;margin:0}.definition-table{margin-top:14px;display:grid;grid-template-columns:160px 1fr;border:1px solid var(--line);font-size:12px}.definition-table b,.definition-table span{padding:10px 12px;border-bottom:1px solid var(--line)}.definition-table b{background:#f2f2f3}.definition-table span:nth-last-child(-n+2),.definition-table b:nth-last-child(-n+2){border-bottom:0}.journey-crs{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0 4px}.journey-crs .cr-chip{margin:0;padding:3px 7px 3px 3px}.journey-crs .cr-chip img,.journey-crs .mini-empty{width:36px;height:36px}.journey-crs .cr-chip b{font-size:11px}
+.all-media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.all-media-card{border:1px solid var(--line);padding:18px;background:#fff;border-top:4px solid #1f2937}.all-media-card h3{font-size:16px;margin:0 0 12px;min-height:40px}.all-media-card>div{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.all-media-card span{background:var(--soft);padding:8px 5px;text-align:center}.all-media-card small{display:block;color:var(--muted);font-size:9px}.all-media-card b{display:block;font-size:13px;margin-top:3px}.all-media-card p{margin:11px 0 0;font-size:12px;font-weight:800;color:#444}.unified-total{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;background:#191919;color:#fff;padding:18px;margin-bottom:14px}.unified-total span{text-align:center}.unified-total small{display:block;color:#aaa;font-size:10px}.unified-total b{display:block;color:#ffe56d;font-size:20px;margin-top:4px}
+.callout{background:#191919;color:#fff;padding:28px 32px;border-radius:2px;font-size:18px;line-height:1.8}.callout strong{color:#ff6570}
+.urgency-plan{margin:26px 0 18px;border:1px solid var(--line);padding:22px;background:#fff}.urgency-plan h3{font-size:24px;margin:0 0 8px}.urgency-plan>p{color:#555;line-height:1.75}.quadrant{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.quad{padding:18px;border:1px solid var(--line);min-height:190px;position:relative}.quad.high{border-top:5px solid var(--red);background:#fff7f3}.quad.low{border-top:5px solid #777;background:var(--soft)}.quad .count{position:absolute;right:14px;top:12px;font-size:28px;font-weight:900;color:var(--red)}.quad small{font-weight:900;color:#777}.quad h4{font-size:17px;margin:8px 48px 8px 0}.quad p,.quad li{font-size:12px;line-height:1.7;color:#555}.quad ul{padding-left:18px}.reference-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}.reference-strip figure{margin:0;background:#111;color:#fff;padding:8px}.reference-strip img{width:100%;height:180px;object-fit:cover;object-position:center;display:block;margin:0;border:0}.reference-strip figcaption{font-size:11px;font-weight:800;padding-top:7px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.finding{border:1px solid var(--line);padding:26px;background:var(--soft)}.finding h3{font-size:20px;margin:0 0 12px}.finding p,.finding li{line-height:1.75;color:#444}.finding .tag{color:var(--red);font-weight:800;font-size:12px;letter-spacing:.08em}.source-note{font-size:12px;color:var(--muted);background:#fff4db;border-left:4px solid #e6a700;padding:12px 15px;margin-top:16px;line-height:1.65}
+.section-lead{margin:-10px 0 22px;color:var(--muted);line-height:1.7}.creative-grid{display:grid;grid-template-columns:1fr;gap:12px}.creative-card{border:1px solid var(--line);background:#fff;overflow:hidden;display:grid;grid-template-columns:320px minmax(0,1fr)}.thumb{height:190px;background:#eee;position:relative;display:flex;align-items:center;justify-content:center}.thumb-link{display:block;width:100%;height:100%}.thumb img{width:100%;height:100%;object-fit:contain;background:#f3f3f3}.noimg{color:#999;height:100%;display:flex;align-items:center;justify-content:center}.type{position:absolute;right:8px;bottom:8px;background:#111;color:#fff;padding:5px 8px;font-size:11px}.card-body{padding:18px 20px;display:grid;grid-template-columns:minmax(180px,.9fr) minmax(460px,2.1fr);grid-template-areas:"top top" "title metrics" "axis metrics" "links metrics";column-gap:26px;align-content:center}.rowtop{grid-area:top;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:4px}.media{font-weight:800;color:var(--red);display:flex;align-items:center;gap:7px}.media-icon{width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:17px}.meta-icon{background:#0866ff}.google-icon{background:conic-gradient(from -45deg,#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 75%,#ea4335 0);text-shadow:0 1px 2px #333}.state{font-size:11px;padding:4px 7px;border-radius:10px}.state.on{background:#def4e7;color:#0b693b}.state.off{background:#eee;color:#666}.card-body h3{grid-area:title;font-size:17px;margin:10px 0 5px;overflow-wrap:anywhere}.axis{grid-area:axis;font-size:13px;color:#555;margin:0 0 8px;min-height:0}.metrics{grid-area:metrics;display:grid;grid-template-columns:repeat(5,1fr);gap:7px;font-size:10px;margin:8px 0;align-self:center}.metrics span{padding:10px 6px;background:var(--soft);text-align:center}.metrics b{display:block;font-size:14px;margin-bottom:3px}.links{grid-area:links;display:flex;gap:8px;flex-wrap:wrap}.links a{display:inline-block;color:#fff;background:var(--red);padding:7px 10px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none}.disabled-link{display:inline-block;background:#eee;color:#888;padding:7px 10px;border-radius:3px;font-size:12px}.cr-chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:5px 9px 5px 5px;margin:4px 5px 4px 0;vertical-align:middle}.cr-chip img,.mini-empty{width:42px;height:42px;object-fit:contain;background:#eee;display:inline-flex;align-items:center;justify-content:center;font-size:10px;color:#777}.cr-chip b{font-size:12px}
+.table-wrap{overflow:auto;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;font-size:12px}th{background:#191919;color:#fff;position:sticky;top:0;text-align:left;padding:11px;white-space:nowrap}td{padding:10px;border-bottom:1px solid var(--line);white-space:nowrap}tr:nth-child(even) td{background:#fafafa}
+.notes{font-size:13px;line-height:1.8;color:var(--muted)}.storyboard{margin-top:24px;border:1px solid var(--line);background:#fff;padding:22px}.storyboard h3{font-size:24px;margin:0 0 8px}.storyboard>p{color:#555;line-height:1.75}.storyboard img{display:block;width:100%;height:auto;margin:18px 0;border:1px solid var(--line)}.story-cuts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.story-cut{background:var(--soft);border-top:4px solid var(--red);padding:14px}.story-cut b{display:block;font-size:13px;margin-bottom:7px}.story-cut small{display:block;color:var(--red);font-weight:900;margin-bottom:5px}.story-cut p{font-size:11px;line-height:1.65;color:#555;margin:0}.story-note{background:#191919;color:#fff;padding:16px 18px;margin-top:12px;font-size:13px;line-height:1.7}.story-note strong{color:#ffe56d}
+.alpha-mock{display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:center;margin-top:20px;padding:20px;background:#f7f7f8;border:1px solid var(--line)}.alpha-mock video{display:block;width:100%;max-height:460px;background:#111}.alpha-mock h4{font-size:20px;margin:0 0 10px}.alpha-mock p{font-size:13px;line-height:1.75;color:#555}.alpha-mock a{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:9px 13px;font-size:12px;font-weight:900}
+@media(max-width:1000px){.kpis,.media-summary,.all-media-grid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.creative-card{grid-template-columns:260px minmax(0,1fr)}.card-body{grid-template-columns:1fr;grid-template-areas:"top" "title" "axis" "metrics" "links"}.metrics{grid-template-columns:repeat(3,1fr)}.journey{grid-template-columns:1fr}.journey-arrow{transform:rotate(90deg)}.story-cuts{grid-template-columns:1fr 1fr}}@media(max-width:700px){.kpis,.media-summary,.daily-charts,.next-grid,.scope-grid,.all-media-grid,.unified-total,.story-cuts{grid-template-columns:1fr}.scope-item{border-right:0;border-bottom:1px solid var(--line)}.definition-table{grid-template-columns:1fr}.creative-card{grid-template-columns:1fr}.thumb{height:190px}.metrics{grid-template-columns:repeat(2,1fr)}.hero{padding-top:48px}.chart-panel{padding:14px;overflow:auto}.trend-svg{min-width:600px}}
+.matrix{position:relative;padding:14px 0 26px 34px}.axis-y{position:absolute;left:-32px;top:50%;transform:rotate(-90deg);font-size:11px;font-weight:900;color:#666;letter-spacing:.08em}.axis-x{text-align:center;margin-top:10px;font-size:11px;font-weight:900;color:#666;letter-spacing:.08em}.quad{min-height:145px;padding:16px}.quad p{margin:5px 46px 8px 0}.quad-points{display:flex;flex-wrap:wrap;gap:5px}.quad-points span{background:#fff;border:1px solid #ddd;padding:5px 7px;font-size:10px;font-weight:800}.quad.high .quad-points span{border-color:#efb7b7}.reference-strip{max-width:720px;gap:10px}.reference-strip figure{padding:6px}.reference-strip img{height:120px;object-fit:contain;background:#222}.reference-strip figcaption{display:flex;align-items:center;justify-content:space-between;gap:5px}.raw-link{color:#191919;background:#ffe56d;text-decoration:none;padding:5px 7px;border-radius:2px;font-size:9px;font-weight:900;white-space:nowrap}
+@media(max-width:1000px){.toc-wrap{align-items:flex-start;overflow-x:auto}.toc{flex-wrap:nowrap}.toc a{white-space:nowrap;padding:9px 12px;font-size:12px}.quadrant,.reference-strip{grid-template-columns:1fr 1fr}}@media(max-width:700px){.quadrant,.reference-strip,.alpha-mock{grid-template-columns:1fr}.matrix{padding-left:0}.axis-y{position:static;transform:none;margin-bottom:8px}}
+.channel-lead{font-size:14px;line-height:1.7;color:#253044;margin:-8px 0 14px}.channel-lead strong{color:#2563eb}.channel-table-wrap{overflow-x:auto;border:1px solid #dbe1eb}.channel-table{width:100%;border-collapse:collapse;font-size:13px}.channel-table thead th{background:#142039;color:#fff;padding:13px 12px;text-align:left;white-space:nowrap;position:static}.channel-table tbody th,.channel-table tbody td{padding:13px 12px;border-bottom:1px solid #e5e9f1;text-align:right;white-space:nowrap}.channel-table tbody th{text-align:left;min-width:210px}.channel-table tbody td:last-child{text-align:left;min-width:270px;font-weight:800}.channel-table tr.best{background:#edf4ff}.channel-table tr.watch{background:#fff}.channel-table tr.stop{background:#fff1ed;color:#c93428}.channel-table tr:last-child th,.channel-table tr:last-child td{border-bottom:0}.media-insight-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.media-insight-bar div{border:1px solid #bfd3ff;background:#eef5ff;padding:14px 16px;font-size:12px;line-height:1.65}.media-insight-bar div:last-child{border-color:#f1c6ba;background:#fff3ef}.media-insight-bar b{display:inline-block;margin-right:8px;color:#2563eb}.media-insight-bar div:last-child b{color:#d3382d}.urgency-plan{scroll-margin-top:145px}@media(min-width:1201px){main{max-width:1400px}}
+.daily-charts{grid-template-columns:1fr}.chart-footnote{margin:8px 2px 0;color:#777;font-size:11px;line-height:1.6}.chart-footnote b{color:#444}
+.channel-table tbody th{position:static}.channel-table tr.best th{background:#edf4ff;color:#191919}.channel-table tr.watch th{background:#fff;color:#191919}.channel-table tr.stop th{background:#fff1ed;color:#c93428}
+.comparison-wrap{overflow-x:auto;border:1px solid #dbe1eb}.comparison-table{width:100%;border-collapse:collapse;font-size:14px}.comparison-table th,.comparison-table td{padding:14px 16px;border-bottom:1px solid #e5e9f1;text-align:right;position:static}.comparison-table thead th{background:#142039;color:#fff}.comparison-table th:first-child,.comparison-table td:first-child{text-align:left}.comparison-table tbody th{background:#f7f8fa;color:#191919}.comparison-table .worse{color:#c93428;font-weight:900}.comparison-table .neutral{font-weight:800}.daily-compare{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.daily-compare article{border:1px solid var(--line);padding:16px;background:#fff}.daily-compare small{display:block;color:var(--muted);font-weight:800}.daily-compare b{display:block;font-size:20px;margin:7px 0}.daily-compare span{font-size:12px;color:#c93428;font-weight:900}.comparison-insight{margin-top:14px;background:#191919;color:#fff;padding:22px 26px;line-height:1.8}.comparison-insight strong{color:#ffe56d}
+.status-tags{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}.contribution{display:inline-flex;align-items:center;padding:4px 8px;border:1px solid;border-radius:12px;font-size:10px;font-weight:900;white-space:nowrap}.contribution.direct{background:#dff3ff;color:#075985;border-color:#7dd3fc}.contribution.assist{background:#fff2b8;color:#765900;border-color:#e8cd62}.contribution.pending{background:#eee;color:#666;border-color:#ccc}.contribution-logic{border:1px solid var(--line);background:#fff;padding:24px}.logic-flow{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}.logic-flow b{font-size:15px}.logic-arrow{font-size:24px;color:var(--red);font-weight:900}.contribution-logic p{margin:0;color:#555;line-height:1.8}.inline-role{margin-right:6px;vertical-align:middle}
+@media(max-width:700px){.media-insight-bar,.daily-compare{grid-template-columns:1fr}}
+</style></head><body>
+<header class="hero"><div class="eyebrow">TREPRO CREATIVE PERFORMANCE REVIEW</div><h1>2026/8/1-18</h1><div class="meta-line">基準：運用集計 8/18時点 ／ 前月比：2026/7/1〜7/31 ／ リード内訳：推移(CPN)_Bridge・CR別</div></header><div class="toc-wrap"><div class="toc-label">目次</div><nav class="toc" aria-label="目次"><a href="#summary">媒体サマリー</a><a href="#comparison">7月比較</a><a href="#trends">日別推移</a><a href="#insights">全媒体の示唆</a><a href="#contribution-logic">寄与タイプ</a><a href="#creative-role">CV距離とCRの役割</a><a href="#message-insights">訴求軸の示唆</a><a href="#next-tests">CR戦略マップ</a><a href="#creative-list">CR一覧</a><a href="#raw-data">全数値</a></nav></div>
+<main>
+<section id="summary"><h2>媒体別ハイライト</h2><p class="channel-lead"><strong>8/1〜8/18はCOST ¥4,296,800、媒体CV 42件、総リード51件、有効リード35件</strong>。有効CPAは¥122,766、有効率は68.63%です。8/17時点版からの累計更新差分は総リード+5件、有効リード+5件で、累計効率が改善しました。</p><div class="unified-total"><span><small>全媒体 COST</small><b>¥4,296,800</b></span><span><small>総リード</small><b>51</b></span><span><small>リードCPA</small><b>¥84,251</b></span><span><small>有効CV</small><b>35</b></span><span><small>有効CPA</small><b>¥122,766</b></span></div><div class="channel-table-wrap"><table class="channel-table"><thead><tr><th>媒体</th><th>COST</th><th>総リード</th><th>有効リード</th><th>有効率</th><th>有効CPA</th><th>評価</th></tr></thead><tbody><tr class="best"><th>Meta</th><td>¥1,425,284</td><td>16</td><td><b>13</b></td><td>81.25%</td><td><b>¥109,637</b></td><td>◎ 主力／量・質とも最良</td></tr><tr class="best"><th>Google Lis一般</th><td>¥885,845</td><td>11</td><td><b>9</b></td><td>81.82%</td><td><b>¥98,427</b></td><td>◎ 8/18に量・質が改善／検索語句を横展開</td></tr><tr class="best"><th>Google Lis指名</th><td>¥109,135</td><td>4</td><td><b>3</b></td><td>75.00%</td><td><b>¥36,378</b></td><td>◎ 有効率75%／受け皿を維持</td></tr><tr class="watch"><th>P-MAX</th><td>¥629,788</td><td>15</td><td><b>6</b></td><td>40.00%</td><td><b>¥104,965</b></td><td>△ 獲得量は最大級／有効率40.0%</td></tr><tr class="stop"><th>DemandGen</th><td>¥337,408</td><td>0</td><td><b>0</b></td><td>—</td><td><b>—</b></td><td>× COST ¥337,408でCV 0／抑制優先</td></tr><tr class="watch"><th>その他媒体</th><td>¥909,340</td><td>5</td><td><b>4</b></td><td>80.00%</td><td><b>¥227,335</b></td><td>△ 運用集計基準で継続評価</td></tr></tbody></table></div><div class="media-insight-bar"><div><b>8/18集計更新で質が改善</b>Metaは16→13、Google一般は11→9。累計更新で増えた総リード5件は、有効リードも5件増となりました。</div><div><b>ゼロCVの抑制は継続</b>DemandGenはCOST ¥337,408でCV 0。P-MAXも総リード15→有効6のため、有効化率40%を監視します。</div></div><div class="source-note">運用集計基準：8/1〜8/18、COST ¥4,296,800、媒体CV 42、総リード51、有効リード35。「推移(CPN)_Bridge」月次累計を使用。累計更新差分は8/18単日行と完全一致しない場合があります。</div></section>
+<section id="comparison"><h2>7月実績との比較</h2><p class="section-lead">7月は31日間、8月は18日時点のため、総量の増減だけではなく「1日あたり」とCPA・有効率で比較します。</p><div class="comparison-wrap"><table class="comparison-table"><thead><tr><th>指標</th><th>7/1〜7/31</th><th>8/1〜8/18</th><th>増減率</th></tr></thead><tbody><tr><th>COST</th><td>¥7,594,606</td><td>¥4,296,800</td><td class="neutral">-43.4%</td></tr><tr><th>媒体CV</th><td>116件</td><td>42件</td><td class="neutral">-63.8%</td></tr><tr><th>総リード</th><td>126件</td><td>51件</td><td class="neutral">-59.5%</td></tr><tr><th>有効リード</th><td>99件</td><td>35件</td><td class="neutral">-64.6%</td></tr><tr><th>リードCPA</th><td>¥60,275</td><td>¥84,251</td><td class="worse">+39.8%</td></tr><tr><th>有効CPA</th><td>¥76,713</td><td>¥122,766</td><td class="worse">+60.0%</td></tr><tr><th>有効率</th><td>78.57%</td><td>68.63%</td><td class="worse">-12.7%</td></tr></tbody></table></div><div class="daily-compare"><article><small>COST／日</small><b>¥244,987 → ¥238,711</b><span>-2.6%</span></article><article><small>総リード／日</small><b>4.06件 → 2.83件</b><span>-30.3%</span></article><article><small>有効リード／日</small><b>3.19件 → 1.94件</b><span>-39.1%</span></article></div><div class="comparison-insight"><strong>8/18の高品質な獲得で、前月との効率差は8/17時点より縮小しました。</strong> COST／日は約2.6%減、総リード／日は約30.3%減、有効リード／日は約39.1%減。有効率は78.57%→68.63%、有効CPAは¥76,713→¥122,766（+60.0%）です。Google一般・Metaの改善パターンを伸ばしつつ、ゼロCV配信の抑制を継続します。</div><div class="source-note">比較基準：「推移(CPN)_Bridge」月次累計。総リードはCRM基準、媒体CVとは別指標です。</div></section>
+<section id="trends"><h2>全媒体の日別推移</h2><p class="section-lead">「推移(CPN)_Bridge」の全体列を使用。縦の破線は月曜始まりの週区切り（8/3・8/10・8/17）です。</p><div class="daily-charts"><article class="chart-panel"><h3>全媒体合計</h3><div class="chart-title">Cost・CPA・有効CPA（日別）</div><div class="legend"><i style="--c:#191919"></i>Cost <i style="--c:#df1f2d"></i>CPA <i style="--c:#1b66c9"></i>有効CPA</div><svg class="trend-svg" viewBox="0 0 920 245" role="img" aria-label="totalの日別推移"><line x1="64" y1="207.0" x2="902" y2="207.0" class="gridline"/><text x="56" y="211.0" text-anchor="end" class="axis-label">¥0k</text><line x1="64" y1="159.8" x2="902" y2="159.8" class="gridline"/><text x="56" y="163.8" text-anchor="end" class="axis-label">¥81k</text><line x1="64" y1="112.5" x2="902" y2="112.5" class="gridline"/><text x="56" y="116.5" text-anchor="end" class="axis-label">¥162k</text><line x1="64" y1="65.2" x2="902" y2="65.2" class="gridline"/><text x="56" y="69.2" text-anchor="end" class="axis-label">¥243k</text><line x1="64" y1="18.0" x2="902" y2="18.0" class="gridline"/><text x="56" y="22.0" text-anchor="end" class="axis-label">¥324k</text><text x="64.0" y="231" text-anchor="middle" class="date-label">1</text><text x="113.3" y="231" text-anchor="middle" class="date-label">2</text><line x1="162.6" y1="18" x2="162.6" y2="207" class="weekline"/><text x="166.6" y="29" class="week-label">週開始（月）</text><text x="162.6" y="231" text-anchor="middle" class="date-label">3</text><text x="211.9" y="231" text-anchor="middle" class="date-label">4</text><text x="261.2" y="231" text-anchor="middle" class="date-label">5</text><text x="310.5" y="231" text-anchor="middle" class="date-label">6</text><text x="359.8" y="231" text-anchor="middle" class="date-label">7</text><text x="409.1" y="231" text-anchor="middle" class="date-label">8</text><text x="458.4" y="231" text-anchor="middle" class="date-label">9</text><line x1="507.6" y1="18" x2="507.6" y2="207" class="weekline"/><text x="511.6" y="29" class="week-label">週開始（月）</text><text x="507.6" y="231" text-anchor="middle" class="date-label">10</text><text x="556.9" y="231" text-anchor="middle" class="date-label">11</text><text x="606.2" y="231" text-anchor="middle" class="date-label">12</text><text x="655.5" y="231" text-anchor="middle" class="date-label">13</text><text x="704.8" y="231" text-anchor="middle" class="date-label">14</text><text x="754.1" y="231" text-anchor="middle" class="date-label">15</text><text x="803.4" y="231" text-anchor="middle" class="date-label">16</text><line x1="852.7" y1="18" x2="852.7" y2="207" class="weekline"/><text x="856.7" y="29" class="week-label">週開始（月）</text><text x="852.7" y="231" text-anchor="middle" class="date-label">17</text><text x="902.0" y="231" text-anchor="middle" class="date-label">18</text><rect x="54.2" y="79.9" width="19.6" height="127.1" rx="2" fill="#191919" opacity=".14"><title>8/1（土） Cost: ¥218k</title></rect><rect x="103.5" y="70.3" width="19.6" height="136.7" rx="2" fill="#191919" opacity=".14"><title>8/2（日） Cost: ¥234k</title></rect><rect x="152.8" y="38.3" width="19.6" height="168.8" rx="2" fill="#191919" opacity=".14"><title>8/3（月） Cost: ¥289k</title></rect><rect x="202.1" y="43.6" width="19.6" height="163.4" rx="2" fill="#191919" opacity=".14"><title>8/4（火） Cost: ¥280k</title></rect><rect x="251.4" y="38.8" width="19.6" height="168.2" rx="2" fill="#191919" opacity=".14"><title>8/5（水） Cost: ¥288k</title></rect><rect x="300.7" y="54.2" width="19.6" height="152.8" rx="2" fill="#191919" opacity=".14"><title>8/6（木） Cost: ¥262k</title></rect><rect x="350.0" y="66.1" width="19.6" height="140.9" rx="2" fill="#191919" opacity=".14"><title>8/7（金） Cost: ¥242k</title></rect><rect x="399.3" y="88.8" width="19.6" height="118.2" rx="2" fill="#191919" opacity=".14"><title>8/8（土） Cost: ¥203k</title></rect><rect x="448.6" y="89.9" width="19.6" height="117.1" rx="2" fill="#191919" opacity=".14"><title>8/9（日） Cost: ¥201k</title></rect><rect x="497.9" y="50.2" width="19.6" height="156.8" rx="2" fill="#191919" opacity=".14"><title>8/10（月） Cost: ¥269k</title></rect><rect x="547.2" y="71.3" width="19.6" height="135.7" rx="2" fill="#191919" opacity=".14"><title>8/11（祝） Cost: ¥233k</title></rect><rect x="596.5" y="69.7" width="19.6" height="137.3" rx="2" fill="#191919" opacity=".14"><title>8/12（水） Cost: ¥235k</title></rect><rect x="645.8" y="96.9" width="19.6" height="110.1" rx="2" fill="#191919" opacity=".14"><title>8/13（木） Cost: ¥189k</title></rect><rect x="695.0" y="95.4" width="19.6" height="111.6" rx="2" fill="#191919" opacity=".14"><title>8/14（金） Cost: ¥191k</title></rect><rect x="744.3" y="88.7" width="19.6" height="118.3" rx="2" fill="#191919" opacity=".14"><title>8/15（土） Cost: ¥203k</title></rect><rect x="793.6" y="88.3" width="19.6" height="118.7" rx="2" fill="#191919" opacity=".14"><title>8/16（日） Cost: ¥204k</title></rect><rect x="842.9" y="46.2" width="19.6" height="160.8" rx="2" fill="#191919" opacity=".14"><title>8/17（月） Cost: ¥276k</title></rect><rect x="892.2" y="43.2" width="19.6" height="163.8" rx="2" fill="#191919" opacity=".14"><title>8/18（火） Cost: ¥281k</title></rect><polyline points="64.0,143.5 113.3,138.7 162.6,173.2 211.9,174.3 261.2,173.4 310.5,181.5 359.8,136.6" fill="none" stroke="#df1f2d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><polyline points="458.4,89.9 507.6,154.7 556.9,71.3 606.2,138.4 655.5,152.0 704.8,184.7 754.1,88.7 803.4,88.3 852.7,126.6 902.0,152.4" fill="none" stroke="#df1f2d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="64.0" cy="143.5" r="3.5" fill="#df1f2d"><title>8/1（土） CPA: ¥109k</title></circle><circle cx="113.3" cy="138.7" r="3.5" fill="#df1f2d"><title>8/2（日） CPA: ¥117k</title></circle><circle cx="162.6" cy="173.2" r="3.5" fill="#df1f2d"><title>8/3（月） CPA: ¥58k</title></circle><circle cx="211.9" cy="174.3" r="3.5" fill="#df1f2d"><title>8/4（火） CPA: ¥56k</title></circle><circle cx="261.2" cy="173.4" r="3.5" fill="#df1f2d"><title>8/5（水） CPA: ¥58k</title></circle><circle cx="310.5" cy="181.5" r="3.5" fill="#df1f2d"><title>8/6（木） CPA: ¥44k</title></circle><circle cx="359.8" cy="136.6" r="3.5" fill="#df1f2d"><title>8/7（金） CPA: ¥121k</title></circle><circle cx="458.4" cy="89.9" r="3.5" fill="#df1f2d"><title>8/9（日） CPA: ¥201k</title></circle><circle cx="507.6" cy="154.7" r="3.5" fill="#df1f2d"><title>8/10（月） CPA: ¥90k</title></circle><circle cx="556.9" cy="71.3" r="3.5" fill="#df1f2d"><title>8/11（祝） CPA: ¥233k</title></circle><circle cx="606.2" cy="138.4" r="3.5" fill="#df1f2d"><title>8/12（水） CPA: ¥118k</title></circle><circle cx="655.5" cy="152.0" r="3.5" fill="#df1f2d"><title>8/13（木） CPA: ¥94k</title></circle><circle cx="704.8" cy="184.7" r="3.5" fill="#df1f2d"><title>8/14（金） CPA: ¥38k</title></circle><circle cx="754.1" cy="88.7" r="3.5" fill="#df1f2d"><title>8/15（土） CPA: ¥203k</title></circle><circle cx="803.4" cy="88.3" r="3.5" fill="#df1f2d"><title>8/16（日） CPA: ¥204k</title></circle><circle cx="852.7" cy="126.6" r="3.5" fill="#df1f2d"><title>8/17（月） CPA: ¥138k</title></circle><circle cx="902.0" cy="152.4" r="3.5" fill="#df1f2d"><title>8/18（火） CPA: ¥94k</title></circle><polyline points="64.0,79.9 113.3,138.7 162.6,164.8 211.9,166.2 261.2,164.9 310.5,130.6 359.8,136.6" fill="none" stroke="#1b66c9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><polyline points="458.4,89.9 507.6,128.6" fill="none" stroke="#1b66c9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><polyline points="606.2,138.4" fill="none" stroke="#1b66c9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><polyline points="704.8,169.8" fill="none" stroke="#1b66c9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><polyline points="803.4,88.3 852.7,126.6 902.0,125.1" fill="none" stroke="#1b66c9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><rect x="60.5" y="76.4" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/1（土） 有効CPA: ¥218k</title></rect><rect x="109.8" y="135.2" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/2（日） 有効CPA: ¥117k</title></rect><rect x="159.1" y="161.3" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/3（月） 有効CPA: ¥72k</title></rect><rect x="208.4" y="162.7" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/4（火） 有効CPA: ¥70k</title></rect><rect x="257.7" y="161.4" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/5（水） 有効CPA: ¥72k</title></rect><rect x="307.0" y="127.1" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/6（木） 有効CPA: ¥131k</title></rect><rect x="356.3" y="133.1" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/7（金） 有効CPA: ¥121k</title></rect><rect x="454.9" y="86.4" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/9（日） 有効CPA: ¥201k</title></rect><rect x="504.1" y="125.1" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/10（月） 有効CPA: ¥134k</title></rect><rect x="602.7" y="134.9" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/12（水） 有効CPA: ¥118k</title></rect><rect x="701.3" y="166.3" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/14（金） 有効CPA: ¥64k</title></rect><rect x="799.9" y="84.8" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/16（日） 有効CPA: ¥204k</title></rect><rect x="849.2" y="123.1" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/17（月） 有効CPA: ¥138k</title></rect><rect x="898.5" y="121.6" width="7" height="7" fill="#fff" stroke="#1b66c9" stroke-width="2"><title>8/18（火） 有効CPA: ¥140k</title></rect></svg><div class="chart-title second">CV・有効CV（日別）</div><div class="legend"><i style="--c:#df1f2d"></i>CV <i style="--c:#14804a"></i>有効CV</div><svg class="trend-svg" viewBox="0 0 920 245" role="img" aria-label="totalの日別推移"><line x1="64" y1="207.0" x2="902" y2="207.0" class="gridline"/><text x="56" y="211.0" text-anchor="end" class="axis-label">0</text><line x1="64" y1="159.8" x2="902" y2="159.8" class="gridline"/><text x="56" y="163.8" text-anchor="end" class="axis-label">2</text><line x1="64" y1="112.5" x2="902" y2="112.5" class="gridline"/><text x="56" y="116.5" text-anchor="end" class="axis-label">3</text><line x1="64" y1="65.2" x2="902" y2="65.2" class="gridline"/><text x="56" y="69.2" text-anchor="end" class="axis-label">5</text><line x1="64" y1="18.0" x2="902" y2="18.0" class="gridline"/><text x="56" y="22.0" text-anchor="end" class="axis-label">7</text><text x="64.0" y="231" text-anchor="middle" class="date-label">1</text><text x="113.3" y="231" text-anchor="middle" class="date-label">2</text><line x1="162.6" y1="18" x2="162.6" y2="207" class="weekline"/><text x="166.6" y="29" class="week-label">週開始（月）</text><text x="162.6" y="231" text-anchor="middle" class="date-label">3</text><text x="211.9" y="231" text-anchor="middle" class="date-label">4</text><text x="261.2" y="231" text-anchor="middle" class="date-label">5</text><text x="310.5" y="231" text-anchor="middle" class="date-label">6</text><text x="359.8" y="231" text-anchor="middle" class="date-label">7</text><text x="409.1" y="231" text-anchor="middle" class="date-label">8</text><text x="458.4" y="231" text-anchor="middle" class="date-label">9</text><line x1="507.6" y1="18" x2="507.6" y2="207" class="weekline"/><text x="511.6" y="29" class="week-label">週開始（月）</text><text x="507.6" y="231" text-anchor="middle" class="date-label">10</text><text x="556.9" y="231" text-anchor="middle" class="date-label">11</text><text x="606.2" y="231" text-anchor="middle" class="date-label">12</text><text x="655.5" y="231" text-anchor="middle" class="date-label">13</text><text x="704.8" y="231" text-anchor="middle" class="date-label">14</text><text x="754.1" y="231" text-anchor="middle" class="date-label">15</text><text x="803.4" y="231" text-anchor="middle" class="date-label">16</text><line x1="852.7" y1="18" x2="852.7" y2="207" class="weekline"/><text x="856.7" y="29" class="week-label">週開始（月）</text><text x="852.7" y="231" text-anchor="middle" class="date-label">17</text><text x="902.0" y="231" text-anchor="middle" class="date-label">18</text><polyline points="64.0,150.8 113.3,150.8 162.6,66.4 211.9,66.4 261.2,66.4 310.5,38.3 359.8,150.8 409.1,207.0 458.4,178.9 507.6,122.6 556.9,178.9 606.2,150.8 655.5,150.8 704.8,66.4 754.1,178.9 803.4,178.9 852.7,150.8 902.0,122.6" fill="none" stroke="#df1f2d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="64.0" cy="150.8" r="3.5" fill="#df1f2d"><title>8/1（土） CV: 2</title></circle><circle cx="113.3" cy="150.8" r="3.5" fill="#df1f2d"><title>8/2（日） CV: 2</title></circle><circle cx="162.6" cy="66.4" r="3.5" fill="#df1f2d"><title>8/3（月） CV: 5</title></circle><circle cx="211.9" cy="66.4" r="3.5" fill="#df1f2d"><title>8/4（火） CV: 5</title></circle><circle cx="261.2" cy="66.4" r="3.5" fill="#df1f2d"><title>8/5（水） CV: 5</title></circle><circle cx="310.5" cy="38.3" r="3.5" fill="#df1f2d"><title>8/6（木） CV: 6</title></circle><circle cx="359.8" cy="150.8" r="3.5" fill="#df1f2d"><title>8/7（金） CV: 2</title></circle><circle cx="409.1" cy="207.0" r="3.5" fill="#df1f2d"><title>8/8（土） CV: 0</title></circle><circle cx="458.4" cy="178.9" r="3.5" fill="#df1f2d"><title>8/9（日） CV: 1</title></circle><circle cx="507.6" cy="122.6" r="3.5" fill="#df1f2d"><title>8/10（月） CV: 3</title></circle><circle cx="556.9" cy="178.9" r="3.5" fill="#df1f2d"><title>8/11（祝） CV: 1</title></circle><circle cx="606.2" cy="150.8" r="3.5" fill="#df1f2d"><title>8/12（水） CV: 2</title></circle><circle cx="655.5" cy="150.8" r="3.5" fill="#df1f2d"><title>8/13（木） CV: 2</title></circle><circle cx="704.8" cy="66.4" r="3.5" fill="#df1f2d"><title>8/14（金） CV: 5</title></circle><circle cx="754.1" cy="178.9" r="3.5" fill="#df1f2d"><title>8/15（土） CV: 1</title></circle><circle cx="803.4" cy="178.9" r="3.5" fill="#df1f2d"><title>8/16（日） CV: 1</title></circle><circle cx="852.7" cy="150.8" r="3.5" fill="#df1f2d"><title>8/17（月） CV: 2</title></circle><circle cx="902.0" cy="122.6" r="3.5" fill="#df1f2d"><title>8/18（火） CV: 3</title></circle><polyline points="64.0,178.9 113.3,150.8 162.6,94.5 211.9,94.5 261.2,94.5 310.5,150.8 359.8,150.8 409.1,207.0 458.4,178.9 507.6,150.8 556.9,207.0 606.2,150.8 655.5,207.0 704.8,122.6 754.1,207.0 803.4,178.9 852.7,150.8 902.0,150.8" fill="none" stroke="#14804a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/><rect x="60.5" y="175.4" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/1（土） 有効CV: 1</title></rect><rect x="109.8" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/2（日） 有効CV: 2</title></rect><rect x="159.1" y="91.0" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/3（月） 有効CV: 4</title></rect><rect x="208.4" y="91.0" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/4（火） 有効CV: 4</title></rect><rect x="257.7" y="91.0" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/5（水） 有効CV: 4</title></rect><rect x="307.0" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/6（木） 有効CV: 2</title></rect><rect x="356.3" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/7（金） 有効CV: 2</title></rect><rect x="405.6" y="203.5" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/8（土） 有効CV: 0</title></rect><rect x="454.9" y="175.4" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/9（日） 有効CV: 1</title></rect><rect x="504.1" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/10（月） 有効CV: 2</title></rect><rect x="553.4" y="203.5" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/11（祝） 有効CV: 0</title></rect><rect x="602.7" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/12（水） 有効CV: 2</title></rect><rect x="652.0" y="203.5" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/13（木） 有効CV: 0</title></rect><rect x="701.3" y="119.1" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/14（金） 有効CV: 3</title></rect><rect x="750.6" y="203.5" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/15（土） 有効CV: 0</title></rect><rect x="799.9" y="175.4" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/16（日） 有効CV: 1</title></rect><rect x="849.2" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/17（月） 有効CV: 2</title></rect><rect x="898.5" y="147.2" width="7" height="7" fill="#fff" stroke="#14804a" stroke-width="2"><title>8/18（火） 有効CV: 2</title></rect></svg></article></div><p class="chart-footnote"><b>グラフの読み方：</b>Costは薄い棒、CPA・CVは実線＋丸、最終有効指標は破線＋四角。日別の増減は全媒体合計で判断します。</p></section>
+<section id="insights"><h2>全媒体の示唆</h2><div class="callout">8/18集計更新：<strong>COSTは約28万円増、累計の総リード・有効リードはともに5件増</strong>。累計有効CPAは<span class="marker">¥133,879→¥122,766へ改善</span>しました。</div><div class="grid2" style="margin-top:18px"><div class="finding"><div class="tag">8/1–8/18 RESULT</div><h3>有効リードCPAは¥122,766</h3><p>COST ¥4,296,800、媒体CV 42、総リード51、有効リード35。有効率は68.63%で、8/17時点の65.22%から3.41pt改善しました。</p></div><div class="finding"><div class="tag">QUALITY</div><h3>MetaとGoogle一般が累計改善を牽引</h3><p>Metaは総リード16→有効13、Google一般は11→9。8/17版からの累計更新で、総リードと有効リードがともに5件増えました。</p></div><div class="finding"><div class="tag">WATCH</div><h3>P-MAXは量、有効化率は要監視</h3><p>P-MAXは総リード15で量を作る一方、有効リードは6件、有効率40.0%。検索テーマ・除外条件・オーディエンスシグナルを質基準で見直します。</p></div><div class="finding"><div class="tag">ACTION</div><h3>改善パターンを伸ばし、ゼロCVを抑制</h3><p>Google一般の検索語句・LP整合とMeta勝ち訴求を展開。一方、DemandGenはCOST ¥337,408で媒体CV 0のため、抑制優先度を上げます。</p></div></div></section>
+<section id="contribution-logic"><h2>直接寄与・間接寄与の読み方</h2><div class="contribution-logic"><div class="logic-flow"><span class="contribution assist">間接寄与候補</span><b>課題認識・比較理由をつくる</b><span class="logic-arrow">→</span><span class="contribution direct">直接寄与</span><b>有効リードを刈り取る</b></div><p><mark>媒体CVを生む力と、有効CVまで残す力を分けて評価</mark>します。残存率が高いCRは最終接触の刈り取り役として増額・横展開。乖離が大きいCRは失敗と即断せず、認知・比較を進める間接寄与候補として直接寄与CRへ順番に接続します。CVまたは有効CVデータがないCRは判定保留とし、再接触者の有効CV率で検証します。</p></div></section><section><h2>媒体CV評価</h2><div class="grid2">
+<div class="finding"><div class="tag">CV / CPA WINNERS</div><h3>媒体CVはMeta動画3本に集中</h3><p><span class="contribution direct inline-role">直接寄与</span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/thumbnail_0f708263d40bca0e84b78e399e328187.jpeg" alt="ASC_11_LP02"><b>ASC_11_LP02</b></span><span class="contribution assist inline-role">間接寄与候補</span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/thumbnail_7d3d003706144c8598d2299309ad1f5f.jpeg" alt="ASC_58_LP02"><b>ASC_58_LP02</b></span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/thumbnail_a930061edd15e2899b15f8c006d63c11.jpeg" alt="ASC_59_LP02"><b>ASC_59_LP02</b></span></p><p>上記3本で13CV、Meta全15CVの86.7%を構成。ASC_11は8→有効6で刈り取りを維持、ASC_58・59は比較理由を作るアシスト候補として検証します。</p></div>
+<div class="finding"><div class="tag">MEDIA CV CAUTION</div><h3>媒体CVだけではリード品質を判定できない</h3><p><span class="contribution assist inline-role">間接寄与候補</span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/thumbnail_11b1acfc6e9fcc0eb66e36d8f399d559.jpeg" alt="ASC_61_LP02"><b>ASC_61_LP02</b></span>は媒体CV 2件から有効CV 1件へ残りました。業界特化は一定の質改善を確認できた一方、母数2件のため運用見解と合わせて継続判断します。</p></div></div></section>
+<section><h2>CR別の有効CV評価（Meta）</h2><div class="grid2">
+<div class="finding"><div class="tag">VALID LEADS / META</div><h3>Metaは有効CV 9件、有効CPA ¥162,091</h3><p>媒体CV 15件に対して有効CV 9件、商談化率 60.00%、CV乖離率 40.00%。媒体CPA ¥82,666に対して有効CPAは¥162,091となります。</p><p><span class="contribution direct inline-role">直接寄与</span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/thumbnail_0f708263d40bca0e84b78e399e328187.jpeg" alt="ASC_11_LP02"><b>ASC_11_LP02</b></span>が<mark>有効CV 6件でMeta有効CVの66.7%</mark>を占めます。<span class="contribution assist inline-role">間接寄与候補</span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/thumbnail_7d3d003706144c8598d2299309ad1f5f.jpeg" alt="ASC_58_LP02"><b>ASC_58_LP02</b></span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/thumbnail_a930061edd15e2899b15f8c006d63c11.jpeg" alt="ASC_59_LP02"><b>ASC_59_LP02</b></span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/thumbnail_11b1acfc6e9fcc0eb66e36d8f399d559.jpeg" alt="ASC_61_LP02"><b>ASC_61_LP02</b></span>は各1件の有効CVを獲得しました。</p></div>
+<div class="finding"><div class="tag">QUALITY GAP</div><h3>媒体勝ちと有効勝ちで順位が変わる</h3><p>ASC_58は媒体CV 3→有効CV 1、ASC_59は2→1、ASC_61は2→1。媒体CPAだけでなく有効CV残存率を見ると、ASC_11が8→6で最重要CRです。</p><p>他媒体の有効評価は上段の全媒体サマリーで同一基準比較し、この節ではCR粒度を取得できるMetaだけを深掘りしています。</p></div></div>
+<div class="source-note">期間：2026/8/1〜8/18。全媒体評価は「推移(CPN)_Bridge」のCOST・媒体CV・有効リード、CR深掘りは「CR別」タブを使用。素材画像・動画URLの補完だけに広告管理データを使用しています。</div></section>
+<section id="creative-role"><h2>CV距離から見たクリエイティブの役割</h2><p class="section-lead">媒体CVから有効CVへ残る割合を「刈り取り力」、乖離の大きさを「アシスト候補」として読みます。これはユーザー単位の接触履歴ではなく、<mark>次の配信設計を考えるための概念モデル</mark>です。</p>
+<div class="journey">
+  <article class="journey-step"><small>接触 1｜課題を自分ごと化</small><div class="journey-crs"><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/thumbnail_11b1acfc6e9fcc0eb66e36d8f399d559.jpeg" alt="ASC_61_LP02"><b>ASC_61_LP02</b></span></div><h3>ASC_61：業界×採用人数</h3><span class="contribution assist">間接寄与候補</span><p>媒体CV 2→有効CV 1。業界と採用成果の具体化で検討の入口を作り、有効リードも1件確認しました。<strong>母数が少ないため、業界特化は運用見解と合わせて継続判断</strong>します。</p></article>
+  <div class="journey-arrow">→</div>
+  <article class="journey-step"><small>接触 2｜比較理由を作る</small><div class="journey-crs"><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/thumbnail_7d3d003706144c8598d2299309ad1f5f.jpeg" alt="ASC_58_LP02"><b>ASC_58_LP02</b></span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/thumbnail_a930061edd15e2899b15f8c006d63c11.jpeg" alt="ASC_59_LP02"><b>ASC_59_LP02</b></span></div><h3>ASC_58・59：理解促進動画</h3><span class="contribution assist">間接寄与候補</span><p>媒体CV 5→有効CV 2。クリック後のCVは取れるものの有効化で半数以上が減少。実績・対象条件・適合しないケースを加え、<strong>関心→比較検討</strong>を進める役割が合います。</p></article>
+  <div class="journey-arrow">→</div>
+  <article class="journey-step"><small>接触 3｜最後の不安を除く</small><div class="journey-crs"><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/thumbnail_0f708263d40bca0e84b78e399e328187.jpeg" alt="ASC_11_LP02"><b>ASC_11_LP02</b></span></div><h3>ASC_11：有効CVの刈り取り</h3><span class="contribution direct">直接寄与</span><p>媒体CV 8→有効CV 6で残存率75.0%。量と質の両方を維持しており、現状では<strong>CV距離を「検討→有効リード」まで縮める最重要CR</strong>です。</p></article>
+</div>
+<div class="next-grid"><article class="next-card"><b>NEXT 1｜役割別リターゲティング</b><p>ASC_61接触者にASC_58・59、さらにASC_11を順番に配信。接触順別の有効CV率を比較します。</p></article><article class="next-card"><b>NEXT 2｜刈り取り要素の移植</b><p>ASC_11の冒頭フック・証拠・CTAを分解し、ASC_58・59へ1要素ずつ移植。有効CV残存率を主指標にします。</p></article><article class="next-card"><b>NEXT 3｜アシスト計測</b><p>ビュー・クリック後の再接触有無で分け、アシストCR接触者の最終有効CV率と到達日数を計測します。</p></article></div>
+<div class="source-note">判定ロジック：有効CV÷媒体CVが75%以上＝直接寄与、75%未満で媒体CVあり＝間接寄与候補。CV 0または有効CV未取得＝判定保留。接触履歴に基づく因果判定ではなく、次の配信順を設計するための役割仮説です。</div></section>
+<section id="message-insights"><h2>訴求軸から見た示唆</h2><div class="grid2">
+<div class="finding"><div class="tag">SUPPORTED DIRECTION</div><div class="journey-crs"><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/thumbnail_11b1acfc6e9fcc0eb66e36d8f399d559.jpeg" alt="ASC_61_LP02"><b>ASC_61_LP02</b></span></div><h3><span class="contribution assist inline-role">間接寄与候補</span>業界×採用人数の具体化</h3><p>ASC_61_LP02の「建築業界で何名採用できるか」は、媒体CV 2件から有効CV 1件へ残存。対象業界と成果イメージを明確化し、課題認識を作った後、ASC_11型の証拠・CTAへ接続する仮説です。</p><p><mark>業界特化は有効リード・運用見解と合わせて要検討。</mark></p></div>
+<div class="finding"><div class="tag">WEAKENED / NEEDS RETEST</div><div class="journey-crs"><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1313904547219043/thumbnail_1c53e91f733932b1857d2a04ba5a48ef.jpeg" alt="ASC_62_LP02"><b>ASC_62_LP02</b></span><span class="cr-chip"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1582133050590085/thumbnail_ff7fec428e65803ff580ab09fb7d8b31.jpeg" alt="ASC_63_LP02"><b>ASC_63_LP02</b></span></div><h3><span class="contribution pending inline-role">判定保留</span>離職・求人媒体不振の課題訴求</h3><p>ASC_62_LP02は¥64,985、ASC_63_LP02は¥59,791を消化してCV 0。接触後の間接効果も未計測のため、現時点では寄与を断定せず、解決策・証拠・LPの期待一致を補って再検証します。</p></div></div></section>
+
+<div class="urgency-plan" id="next-tests"><div class="tag">優先度マップ</div><h3>CV緊急度 × 検討成熟度｜追加8本の役割</h3><div class="matrix"><div class="axis-y">採用緊急度　低 → 高</div><div class="quadrant"><article class="quad high"><span class="count">4本</span><small>高緊急 × 検討成熟</small><h4>優先度：最優先｜今すぐ刈り取る</h4><p><span class="contribution direct">直接寄与</span> ASC_11型：証言・実績・CTA</p><div class="quad-points"><span>現場停止リスク</span><span>求人費の見直し</span><span>無料診断</span><span>採用可能数</span></div></article><article class="quad high"><span class="count">3本</span><small>高緊急 × 検討初期</small><h4>優先度：高｜危機を解決策へ</h4><p><span class="contribution assist">間接寄与候補</span> ASC_61型：業界特化フック</p><p><mark>業界特化は有効リード・運用見解と合わせて要検討。</mark></p><div class="quad-points"><span>応募ゼロ</span><span>紹介依存</span><span>母集団形成</span></div></article><article class="quad low"><span class="count">1本</span><small>低緊急 × 検討成熟</small><h4>優先度：中｜比較理由を作る</h4><p><span class="contribution assist">間接寄与候補</span> ASC_58・59型：顧客証言</p><div class="quad-points"><span>選ばれた理由</span><span>向いている企業</span></div></article><article class="quad low"><span class="count">0本</span><small>低緊急 × 検討初期</small><h4>優先度：低｜既存CRで育成</h4><p><span class="contribution pending">判定保留</span> 新作せず、既存アシストCRとリターゲティングで接触を重ねる。</p></article></div><div class="axis-x">検討成熟度　高 ← 低</div></div><div class="story-note"><strong>論理展開：</strong> 間接寄与CRで課題認識・比較理由を作り、直接寄与CRで有効リードを刈り取ります。制作優先順位は 最優先4本 → 優先度高3本 → 優先度中1本です。</div></div><div class="storyboard"><div class="tag">NEXT CREATIVE</div><h3>ネクスト動画構成｜（未定）</h3><p>現時点の動画案は完成度が十分ではないため、構成・素材選定ともに未定とします。有効リード実績と運用者見解を確認したうえで、改めて制作方針を決定します。</p></div><section id="creative-list"><h2>クリエイティブ一覧（素材取得分）</h2><p class="section-lead">キャンペーンONのMeta・Google全39行を媒体CV順で縦一覧化し、広告OFFも保持。各CRに<span class="contribution direct">直接寄与</span> <span class="contribution assist">間接寄与候補</span> <span class="contribution pending">判定保留</span>を表示します。</p><div class="creative-grid">
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/eb2f98b4b2c6231832e8a6d1dc4d7de1.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/thumbnail_0f708263d40bca0e84b78e399e328187.jpeg" alt="ASC_11_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution direct" title="有効CV残存率 75.0%">直接寄与</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_11_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>40,516</b> Imps</span><span><b>¥403,324</b> Cost</span><span><b>8</b> 媒体CV</span><span><b>¥50,416</b> 媒体CPA</span><span><b>6</b> 有効CV</span><span><b>¥79,083</b> 有効CPA</span><span><b>25.00%</b> CV乖離率</span><span><b>56.86%</b> CPA乖離率</span><span><b>100.00%</b> 商談化率</span><span><b>0.89%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/509868938782028/eb2f98b4b2c6231832e8a6d1dc4d7de1.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><div class="noimg">画像なし</div><span class="type">unknown</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 UNKNOWN</span></span></div>
+          <h3>11.Bridge_PMAX</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>194,530</b> Imps</span><span><b>¥547,922</b> Cost</span><span><b>4</b> 媒体CV</span><span><b>¥136,981</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>1.53%</b> CTR</span></div>
+          <div class="links"><span class="disabled-link">素材URLなし</span><span class="disabled-link">遷移先なし</span></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><div class="noimg">画像なし</div><span class="type">text_only</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>748799984056</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>8,667</b> Imps</span><span><b>¥565,995</b> Cost</span><span><b>4</b> 媒体CV</span><span><b>¥154,362</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>5.35%</b> CTR</span></div>
+          <div class="links"><span class="disabled-link">素材URLなし</span><a href="https://lp.tlpc-t.co.jp/" target="_blank" rel="noopener">遷移先：トレプロLP</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/08293297648c26ac14cb0716a827d86e.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/thumbnail_7d3d003706144c8598d2299309ad1f5f.jpeg" alt="ASC_58_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution assist" title="有効CV残存率 33.3%">間接寄与候補</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_58_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>14,591</b> Imps</span><span><b>¥143,085</b> Cost</span><span><b>3</b> 媒体CV</span><span><b>¥47,695</b> 媒体CPA</span><span><b>1</b> 有効CV</span><span><b>¥168,335</b> 有効CPA</span><span><b>66.67%</b> CV乖離率</span><span><b>252.94%</b> CPA乖離率</span><span><b>50.00%</b> 商談化率</span><span><b>0.82%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/08293297648c26ac14cb0716a827d86e.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/19696acc3a540011cf32fe68e97af28d.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/thumbnail_a930061edd15e2899b15f8c006d63c11.jpeg" alt="ASC_59_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution assist" title="有効CV残存率 50.0%">間接寄与候補</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_59_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>11,567</b> Imps</span><span><b>¥110,361</b> Cost</span><span><b>2</b> 媒体CV</span><span><b>¥55,181</b> 媒体CPA</span><span><b>1</b> 有効CV</span><span><b>¥129,836</b> 有効CPA</span><span><b>50.00%</b> CV乖離率</span><span><b>135.29%</b> CPA乖離率</span><span><b>50.00%</b> 商談化率</span><span><b>0.79%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2051119408832689/19696acc3a540011cf32fe68e97af28d.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/ed870471859f88735cc955c0c98afe29.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/thumbnail_11b1acfc6e9fcc0eb66e36d8f399d559.jpeg" alt="ASC_61_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution assist" title="有効CV残存率 50.0%">間接寄与候補</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_61_LP02</h3>
+          <p class="axis">建築業界で何名採用できるか</p>
+          <div class="metrics"><span><b>6,546</b> Imps</span><span><b>¥132,324</b> Cost</span><span><b>2</b> 媒体CV</span><span><b>¥66,162</b> 媒体CPA</span><span><b>1</b> 有効CV</span><span><b>¥155,675</b> 有効CPA</span><span><b>50.00%</b> CV乖離率</span><span><b>135.29%</b> CPA乖離率</span><span><b>100.00%</b> 商談化率</span><span><b>1.18%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1825954388813390/ed870471859f88735cc955c0c98afe29.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><div class="noimg">画像なし</div><span class="type">text_only</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>748658712873</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>397</b> Imps</span><span><b>¥43,395</b> Cost</span><span><b>1</b> 媒体CV</span><span><b>¥32,546</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>16.37%</b> CTR</span></div>
+          <div class="links"><span class="disabled-link">素材URLなし</span><a href="https://lp.tlpc-t.co.jp/" target="_blank" rel="noopener">遷移先：トレプロLP</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><div class="noimg">画像なし</div><span class="type">text_only</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>809319904516</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>2,615</b> Imps</span><span><b>¥204,690</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>5.89%</b> CTR</span></div>
+          <div class="links"><span class="disabled-link">素材URLなし</span><a href="https://jinzai.tlpc-t.co.jp/" target="_blank" rel="noopener">遷移先：人材LP</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" target="_blank" rel="noopener"><img src="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" alt="Youtube_縦型動画"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>Youtube_縦型動画</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>311,661</b> Imps</span><span><b>¥177,396</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>0.20%</b> CTR</span></div>
+          <div class="links"><a href="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/" target="_blank" rel="noopener">遷移先：トレプロLP</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" target="_blank" rel="noopener"><img src="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" alt="Youtube_縦型動画_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>Youtube_縦型動画_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>108,856</b> Imps</span><span><b>¥86,533</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>0.20%</b> CTR</span></div>
+          <div class="links"><a href="http://img.youtube.com/vi/TU1JSBcUUcE/default.jpg" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1925214241505245/0671587b4c973592fb36cb934e4730dd.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1925214241505245/thumbnail_0c63fbbef38f34c944f3067fea3bb91b.jpeg" alt="ASC_60_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_60_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>8,169</b> Imps</span><span><b>¥73,610</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.54%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1925214241505245/0671587b4c973592fb36cb934e4730dd.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1313904547219043/263cc44fa19d16fdd1baa6426e5ac2f7.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1313904547219043/thumbnail_1c53e91f733932b1857d2a04ba5a48ef.jpeg" alt="ASC_62_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_62_LP02</h3>
+          <p class="axis">何名採用できるか・人が辞めちゃう</p>
+          <div class="metrics"><span><b>5,264</b> Imps</span><span><b>¥64,985</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.67%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1313904547219043/263cc44fa19d16fdd1baa6426e5ac2f7.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1582133050590085/3a4813e37de482a6ceee2986d1599dde.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1582133050590085/thumbnail_ff7fec428e65803ff580ab09fb7d8b31.jpeg" alt="ASC_63_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_63_LP02</h3>
+          <p class="axis">何名採用できるか・求人媒体載せても来なかった</p>
+          <div class="metrics"><span><b>4,485</b> Imps</span><span><b>¥59,791</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>1.23%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1582133050590085/3a4813e37de482a6ceee2986d1599dde.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><div class="noimg">画像なし</div><span class="type">text_only</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>812543186615</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>243</b> Imps</span><span><b>¥51,553</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>21.81%</b> CTR</span></div>
+          <div class="links"><span class="disabled-link">素材URLなし</span><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1771168120975697/75201c7dd4db6d17491c1c1f144520e6.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1771168120975697/thumbnail_ef76491cd05bfeeefcb35b1765c99ef3.jpeg" alt="ASC_67_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_67_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>3,832</b> Imps</span><span><b>¥49,489</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.91%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1771168120975697/75201c7dd4db6d17491c1c1f144520e6.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1737752324021328/f06b79ede53f64190771ca2c3f359c84.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1737752324021328/thumbnail_aac641bbcd71d3ee48fe4d11efe1385a.jpeg" alt="ASC_70_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_70_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>3,800</b> Imps</span><span><b>¥41,667</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.90%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1737752324021328/f06b79ede53f64190771ca2c3f359c84.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1052520027378466/dfc5c91b9800b267a0d48fb163dd64f1.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1052520027378466/thumbnail_6335297cf676a0c49833a71d735659e6.jpeg" alt="ASC_64_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_64_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>4,463</b> Imps</span><span><b>¥39,952</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.76%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1052520027378466/dfc5c91b9800b267a0d48fb163dd64f1.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1784172362621733/6603e91cc2b1faf895b72a2147afac12.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1784172362621733/thumbnail_5012d83ca62ea8f63134be7a3fd69bab.jpeg" alt="ASC_69_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_69_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>1,313</b> Imps</span><span><b>¥22,650</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.76%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1784172362621733/6603e91cc2b1faf895b72a2147afac12.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/926567027153991/aa313ca96aeebd7cdfc1a16b20254de4.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/926567027153991/thumbnail_93445833c816410752afdd7babebb546.jpeg" alt="ASC_68_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_68_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>1,298</b> Imps</span><span><b>¥21,082</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>1.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/926567027153991/aa313ca96aeebd7cdfc1a16b20254de4.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="http://img.youtube.com/vi/SmqyMW0giIk/default.jpg" target="_blank" rel="noopener"><img src="http://img.youtube.com/vi/SmqyMW0giIk/default.jpg" alt="Youtube_横型動画_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>Youtube_横型動画_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>6,256</b> Imps</span><span><b>¥19,563</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>0.56%</b> CTR</span></div>
+          <div class="links"><a href="http://img.youtube.com/vi/SmqyMW0giIk/default.jpg" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/f1d24027109781033c7ccbaca3fe253d/thumbnail_4c8fd380a8159136e4eed0bbdaff0c11.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/f1d24027109781033c7ccbaca3fe253d/thumbnail_4c8fd380a8159136e4eed0bbdaff0c11.jpeg" alt="ASC_44_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_44_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>1,823</b> Imps</span><span><b>¥19,038</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.93%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/f1d24027109781033c7ccbaca3fe253d/thumbnail_4c8fd380a8159136e4eed0bbdaff0c11.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2306020303483789/5d1adf671e0b8b81261fb8f8923f12f3.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2306020303483789/thumbnail_c7afe2de149be3ce1b214645944c8e59.jpeg" alt="ASC_65_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_65_LP02</h3>
+          <p class="axis">求職者の質が高い→離脱が少ない</p>
+          <div class="metrics"><span><b>1,609</b> Imps</span><span><b>¥17,889</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.37%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2306020303483789/5d1adf671e0b8b81261fb8f8923f12f3.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2497160504060832/c8ed9f57e0f164d758bc96e2e5840cb2.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2497160504060832/thumbnail_11b21a6ae4bb9956726a3ee7d0daa380.jpeg" alt="ASC_72_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_72_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>1,506</b> Imps</span><span><b>¥14,614</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.86%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/2497160504060832/c8ed9f57e0f164d758bc96e2e5840cb2.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://tpc.googlesyndication.com/simgad/15838574335205574330" target="_blank" rel="noopener"><img src="https://tpc.googlesyndication.com/simgad/15838574335205574330" alt="YoutubeShort以外＿静止画＿LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>YoutubeShort以外＿静止画＿LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>2,507</b> Imps</span><span><b>¥8,909</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>1.48%</b> CTR</span></div>
+          <div class="links"><a href="https://tpc.googlesyndication.com/simgad/15838574335205574330" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/587e5c2e7e28353a04778a05e88598d0/thumbnail_a13786abdbaa9462161239c49af3a40e.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/587e5c2e7e28353a04778a05e88598d0/thumbnail_a13786abdbaa9462161239c49af3a40e.jpeg" alt="ASC_52_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_52_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>309</b> Imps</span><span><b>¥8,756</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>1.29%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/587e5c2e7e28353a04778a05e88598d0/thumbnail_a13786abdbaa9462161239c49af3a40e.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/28076429985285454/cba9491e9c8e3234ced160baccd97ca8.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/28076429985285454/thumbnail_db63c809da6e8ce1fa6b3f1015179f0b.jpeg" alt="ASC_66_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_66_LP02</h3>
+          <p class="axis">求職者の質が高い→離脱が少ない</p>
+          <div class="metrics"><span><b>482</b> Imps</span><span><b>¥6,910</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>1.87%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/28076429985285454/cba9491e9c8e3234ced160baccd97ca8.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049253711127758/392c15a60e806852309dceb13de588bd.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049253711127758/thumbnail_2eca86371bf84ef13f390f20dcb5721c.jpeg" alt="ASC_73_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_73_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>424</b> Imps</span><span><b>¥3,708</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049253711127758/392c15a60e806852309dceb13de588bd.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049650220941451/091e425cbd138ae1b52720330f2538f8.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049650220941451/thumbnail_6afd9a7544bde45142f0585440529dd0.jpeg" alt="ASC_71_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_71_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>205</b> Imps</span><span><b>¥3,080</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.49%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1049650220941451/091e425cbd138ae1b52720330f2538f8.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/4bc44348d71be33e9677e59b90eb9b52/thumbnail_61ec3035d87f77031e9b693866f97f0f.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/4bc44348d71be33e9677e59b90eb9b52/thumbnail_61ec3035d87f77031e9b693866f97f0f.jpeg" alt="ASC_51_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_51_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>17</b> Imps</span><span><b>¥1,119</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/4bc44348d71be33e9677e59b90eb9b52/thumbnail_61ec3035d87f77031e9b693866f97f0f.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/1e4737eff20910cdae7013bd8920ecff/thumbnail_f32589290def255a3a484258205d0469.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/1e4737eff20910cdae7013bd8920ecff/thumbnail_f32589290def255a3a484258205d0469.jpeg" alt="ASC_50_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_50_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>66</b> Imps</span><span><b>¥899</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/1e4737eff20910cdae7013bd8920ecff/thumbnail_f32589290def255a3a484258205d0469.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://tpc.googlesyndication.com/simgad/14991948935472275814" target="_blank" rel="noopener"><img src="https://tpc.googlesyndication.com/simgad/14991948935472275814" alt="YoutubeShort_静止画 ＿LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>YoutubeShort_静止画 ＿LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>1,415</b> Imps</span><span><b>¥766</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>0.92%</b> CTR</span></div>
+          <div class="links"><a href="https://tpc.googlesyndication.com/simgad/14991948935472275814" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/a23edda70cf570ae7cb3df1b1d514138/thumbnail_2e8b68e5e22d7535b36790fd040e9482.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/a23edda70cf570ae7cb3df1b1d514138/thumbnail_2e8b68e5e22d7535b36790fd040e9482.jpeg" alt="ASC_48_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_48_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>37</b> Imps</span><span><b>¥643</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/a23edda70cf570ae7cb3df1b1d514138/thumbnail_2e8b68e5e22d7535b36790fd040e9482.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" alt="ASC_54_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_54_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>23</b> Imps</span><span><b>¥388</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>4.35%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://tpc.googlesyndication.com/simgad/3974487919244041600" target="_blank" rel="noopener"><img src="https://tpc.googlesyndication.com/simgad/3974487919244041600" alt="YoutubeShort_静止画"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon google-icon" aria-hidden="true">G</span><span>Google</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>YoutubeShort_静止画</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>601</b> Imps</span><span><b>¥371</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>—</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>—</b> 商談化率</span><span><b>0.50%</b> CTR</span></div>
+          <div class="links"><a href="https://tpc.googlesyndication.com/simgad/3974487919244041600" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/" target="_blank" rel="noopener">遷移先：トレプロLP</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" alt="ASC_55_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_55_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>28</b> Imps</span><span><b>¥333</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>3.57%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/c5e0da2d630657ae1f766f3fb52fd72a/thumbnail_742264018d82db5334ebf524c187d631.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/fdc335b1ab29db332768fd855ae2d25b/thumbnail_f9da185fe11c59aeb161f4142499f1c3.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/fdc335b1ab29db332768fd855ae2d25b/thumbnail_f9da185fe11c59aeb161f4142499f1c3.jpeg" alt="ASC_53_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_53_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>6</b> Imps</span><span><b>¥167</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/fdc335b1ab29db332768fd855ae2d25b/thumbnail_f9da185fe11c59aeb161f4142499f1c3.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/297f33ebdc9369834da948c1dd9ad7ff/thumbnail_13a1050074d114bcf7f93c286ec4b00a.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/297f33ebdc9369834da948c1dd9ad7ff/thumbnail_13a1050074d114bcf7f93c286ec4b00a.jpeg" alt="ASC_49_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_49_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>10</b> Imps</span><span><b>¥73</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>10.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/297f33ebdc9369834da948c1dd9ad7ff/thumbnail_13a1050074d114bcf7f93c286ec4b00a.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/e9d580ed15a49a8bef6a78d5503863c9/thumbnail_b56df9e76c335b02dd6b11932f69d9d8.jpeg" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/adimages/e9d580ed15a49a8bef6a78d5503863c9/thumbnail_b56df9e76c335b02dd6b11932f69d9d8.jpeg" alt="ASC_57_LP02"></a><span class="type">static_image</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state off">広告 OFF</span></span></div>
+          <h3>ASC_57_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>7</b> Imps</span><span><b>¥60</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>0</b> 有効CV</span><span><b>—</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>0.00%</b> 商談化率</span><span><b>14.29%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/adimages/e9d580ed15a49a8bef6a78d5503863c9/thumbnail_b56df9e76c335b02dd6b11932f69d9d8.jpeg" target="_blank" rel="noopener">画像を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article>
+      <article class="creative-card">
+        <div class="thumb"><a class="thumb-link" href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/08293297648c26ac14cb0716a827d86e.mp4" target="_blank" rel="noopener"><img src="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/thumbnail_7d3d003706144c8598d2299309ad1f5f.jpeg" alt="ASC_58_LP02"></a><span class="type">video</span></div>
+        <div class="card-body">
+          <div class="rowtop"><span class="media"><span class="media-icon meta-icon" aria-hidden="true">∞</span><span>Meta</span></span><span class="status-tags"><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span><span class="state on">広告 ON</span></span></div>
+          <h3>ASC_58_LP02</h3>
+          <p class="axis">管理シート未一致</p>
+          <div class="metrics"><span><b>0</b> Imps</span><span><b>¥0</b> Cost</span><span><b>0</b> 媒体CV</span><span><b>—</b> 媒体CPA</span><span><b>1</b> 有効CV</span><span><b>¥168,335</b> 有効CPA</span><span><b>—</b> CV乖離率</span><span><b>—</b> CPA乖離率</span><span><b>50.00%</b> 商談化率</span><span><b>0.00%</b> CTR</span></div>
+          <div class="links"><a href="https://static.roboma.io/media/facebook/act_994008632198318/advideos/1392459212780521/08293297648c26ac14cb0716a827d86e.mp4" target="_blank" rel="noopener">動画を開く</a><a href="https://lp.tlpc-t.co.jp/02/" target="_blank" rel="noopener">遷移先：LP02</a></div>
+        </div>
+      </article></div></section>
+<section id="raw-data"><h2>全数値</h2><div class="table-wrap"><table><thead><tr><th>媒体</th><th>キャンペーン</th><th>広告</th><th>形式</th><th>広告状態</th><th>寄与タイプ</th><th>訴求軸</th><th>Imps</th><th>Clicks</th><th>CTR</th><th>媒体CV</th><th>CVR</th><th>媒体CPA</th><th>Cost</th><th>有効CV</th><th>有効CPA</th><th>CV乖離率</th><th>CPA乖離率</th><th>商談化率</th></tr></thead><tbody><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_11_LP02</td>
+      <td>video</td><td>OFF</td><td><span class="contribution direct" title="有効CV残存率 75.0%">直接寄与</span></td>
+      <td>未一致</td><td>40,516</td><td>362</td>
+      <td>0.89%</td><td>8</td><td>2.21%</td><td>¥50,416</td><td>¥403,324</td>
+      <td>6</td><td>¥79,083</td><td>25.00%</td><td>56.86%</td><td>100.00%</td>
+    </tr><tr>
+      <td>Google</td><td>11.Bridge_PMAX</td><td>—</td>
+      <td>unknown</td><td>UNKNOWN</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>194,530</td><td>2,982</td>
+      <td>1.53%</td><td>4</td><td>0.13%</td><td>¥136,981</td><td>¥547,922</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Google</td><td>03_Lis_一般</td><td>748799984056</td>
+      <td>text_only</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>8,667</td><td>464</td>
+      <td>5.35%</td><td>4</td><td>0.79%</td><td>¥154,362</td><td>¥565,995</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_58_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution assist" title="有効CV残存率 33.3%">間接寄与候補</span></td>
+      <td>未一致</td><td>14,591</td><td>120</td>
+      <td>0.82%</td><td>3</td><td>2.50%</td><td>¥47,695</td><td>¥143,085</td>
+      <td>1</td><td>¥168,335</td><td>66.67%</td><td>252.94%</td><td>50.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_59_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution assist" title="有効CV残存率 50.0%">間接寄与候補</span></td>
+      <td>未一致</td><td>11,567</td><td>91</td>
+      <td>0.79%</td><td>2</td><td>2.20%</td><td>¥55,181</td><td>¥110,361</td>
+      <td>1</td><td>¥129,836</td><td>50.00%</td><td>135.29%</td><td>50.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_61_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution assist" title="有効CV残存率 50.0%">間接寄与候補</span></td>
+      <td>建築業界で何名採用できるか</td><td>6,546</td><td>77</td>
+      <td>1.18%</td><td>2</td><td>2.60%</td><td>¥66,162</td><td>¥132,324</td>
+      <td>1</td><td>¥155,675</td><td>50.00%</td><td>135.29%</td><td>100.00%</td>
+    </tr><tr>
+      <td>Google</td><td>01_Lis_指名</td><td>748658712873</td>
+      <td>text_only</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>397</td><td>65</td>
+      <td>16.37%</td><td>1</td><td>2.05%</td><td>¥32,546</td><td>¥43,395</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Google</td><td>03_Lis_一般</td><td>809319904516</td>
+      <td>text_only</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>2,615</td><td>154</td>
+      <td>5.89%</td><td>0</td><td>0.00%</td><td>—</td><td>¥204,690</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>Youtube_縦型動画</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>311,661</td><td>608</td>
+      <td>0.20%</td><td>0</td><td>0.00%</td><td>—</td><td>¥177,396</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>Youtube_縦型動画_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>108,856</td><td>221</td>
+      <td>0.20%</td><td>0</td><td>0.00%</td><td>—</td><td>¥86,533</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_60_LP02</td>
+      <td>video</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>8,169</td><td>44</td>
+      <td>0.54%</td><td>0</td><td>0.00%</td><td>—</td><td>¥73,610</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_62_LP02</td>
+      <td>video</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>何名採用できるか・人が辞めちゃう</td><td>5,264</td><td>35</td>
+      <td>0.67%</td><td>0</td><td>0.00%</td><td>—</td><td>¥64,985</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_63_LP02</td>
+      <td>video</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>何名採用できるか・求人媒体載せても来なかった</td><td>4,485</td><td>55</td>
+      <td>1.23%</td><td>0</td><td>0.00%</td><td>—</td><td>¥59,791</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Google</td><td>01_Lis_指名</td><td>812543186615</td>
+      <td>text_only</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>243</td><td>53</td>
+      <td>21.81%</td><td>0</td><td>0.00%</td><td>—</td><td>¥51,553</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_67_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>3,832</td><td>35</td>
+      <td>0.91%</td><td>0</td><td>0.00%</td><td>—</td><td>¥49,489</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_70_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>3,800</td><td>34</td>
+      <td>0.90%</td><td>0</td><td>0.00%</td><td>—</td><td>¥41,667</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_64_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>4,463</td><td>34</td>
+      <td>0.76%</td><td>0</td><td>0.00%</td><td>—</td><td>¥39,952</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_69_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>1,313</td><td>10</td>
+      <td>0.76%</td><td>0</td><td>0.00%</td><td>—</td><td>¥22,650</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_68_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>1,298</td><td>13</td>
+      <td>1.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥21,082</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>Youtube_横型動画_LP02</td>
+      <td>video</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>6,256</td><td>35</td>
+      <td>0.56%</td><td>0</td><td>0.00%</td><td>—</td><td>¥19,563</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_44_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>1,823</td><td>17</td>
+      <td>0.93%</td><td>0</td><td>0.00%</td><td>—</td><td>¥19,038</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_65_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>求職者の質が高い→離脱が少ない</td><td>1,609</td><td>6</td>
+      <td>0.37%</td><td>0</td><td>0.00%</td><td>—</td><td>¥17,889</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_72_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>1,506</td><td>13</td>
+      <td>0.86%</td><td>0</td><td>0.00%</td><td>—</td><td>¥14,614</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>YoutubeShort以外＿静止画＿LP02</td>
+      <td>static_image</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>2,507</td><td>37</td>
+      <td>1.48%</td><td>0</td><td>0.00%</td><td>—</td><td>¥8,909</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_52_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>309</td><td>4</td>
+      <td>1.29%</td><td>0</td><td>0.00%</td><td>—</td><td>¥8,756</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_66_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>求職者の質が高い→離脱が少ない</td><td>482</td><td>9</td>
+      <td>1.87%</td><td>0</td><td>0.00%</td><td>—</td><td>¥6,910</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_73_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>424</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥3,708</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_71_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>205</td><td>1</td>
+      <td>0.49%</td><td>0</td><td>0.00%</td><td>—</td><td>¥3,080</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_51_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>17</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥1,119</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_50_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>66</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥899</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>YoutubeShort_静止画 ＿LP02</td>
+      <td>static_image</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>1,415</td><td>13</td>
+      <td>0.92%</td><td>0</td><td>0.00%</td><td>—</td><td>¥766</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_48_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>37</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥643</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_54_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>23</td><td>1</td>
+      <td>4.35%</td><td>0</td><td>0.00%</td><td>—</td><td>¥388</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Google</td><td>08_DGC_YouTube面のみ</td><td>YoutubeShort_静止画</td>
+      <td>static_image</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>601</td><td>3</td>
+      <td>0.50%</td><td>0</td><td>0.00%</td><td>—</td><td>¥371</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_55_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>28</td><td>1</td>
+      <td>3.57%</td><td>0</td><td>0.00%</td><td>—</td><td>¥333</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_53_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>6</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥167</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_49_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>10</td><td>1</td>
+      <td>10.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥73</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_57_LP02</td>
+      <td>static_image</td><td>OFF</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>7</td><td>1</td>
+      <td>14.29%</td><td>0</td><td>0.00%</td><td>—</td><td>¥60</td>
+      <td>0</td><td>—</td><td>—</td><td>—</td><td>0.00%</td>
+    </tr><tr>
+      <td>Meta</td><td>Bridge_11.ASC</td><td>ASC_58_LP02</td>
+      <td>video</td><td>ON</td><td><span class="contribution pending" title="有効CVまたはCV母数が不足">判定保留</span></td>
+      <td>未一致</td><td>0</td><td>0</td>
+      <td>0.00%</td><td>0</td><td>0.00%</td><td>—</td><td>¥0</td>
+      <td>1</td><td>¥168,335</td><td>—</td><td>—</td><td>50.00%</td>
+    </tr></tbody></table></div></section>
+<section class="notes"><h2>集計条件・制約</h2><p>対象：キャンペーンONのみ（5キャンペーン）。クリエイティブ原票40行のうちキャンペーンOFF 1行を除外し39行を保持。広告状態はON 23行、OFF 15行、UNKNOWN 1行。Meta 28行、Google 11行。仮説管理シート完全一致5行、未一致34行。Google検索広告4行は画像なしのtext_only、P-MAX集約1行はunknownとして保持。クリエイティブURL欠損5行。roboma最終更新は2026-08-19 04:08:03です。</p></section>
+</main></body></html>
